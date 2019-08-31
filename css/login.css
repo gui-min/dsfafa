@@ -1,0 +1,431 @@
+/*
+* @Author: hp
+* @Date:   2019-08-24 11:45:49
+* @Last Modified by:   hp
+* @Last Modified time: 2019-08-30 12:20:48
+*/
+ body{
+	font-size: 14px;
+	font-family: "微软雅黑";
+} 
+
+.box-login .content1,
+.box-login .content2{
+	display: none;
+}
+.box-login{
+	width: 460px;
+	box-shadow: 0 0 1px 1px #fff;
+	margin: 100px auto;
+	color: #888;
+	border-radius: 4px;
+}
+.box-login nav{
+	background-color: #efefef;
+	overflow: hidden;
+	height: 50px;
+	line-height: 50px;
+}
+.box-login .n-left{
+	float: left;
+	color: #5aa700;
+	font-size: 16px;
+}
+.box-login .n-left span:nth-child(2){
+	margin-left: 10px;
+}
+.box-login .n-left img{
+	position: relative;
+	top: 0px; 
+	left: 10px;
+}
+.box-login .cricle{
+	display: inline-block;
+	width: 3px;
+	height: 3px;
+	background-color :#5aa700;
+	border-radius: 50%;
+	position: relative;
+	top: -4px;
+}
+.box-login .content{
+	width: 100%;
+	margin-top: 27px;
+}
+.box-login .n-right{
+	float: right;
+}
+.box-login .c-top{
+	overflow: hidden;
+}
+.box-login .c-left{
+	margin: 0 50px 0 65px;
+	float: left;
+}
+.box-login .c-right{
+	float: left;
+}
+.box-login .c-right .tit{
+	margin: 23px 0;
+}
+.box-login .c-right .tit p{
+	line-height: 30px;
+	text-align: center;
+}
+.box-login .c-right a,
+.box-login .c-bottom a{
+	color: #00be06;
+} 
+a{
+	text-decoration: none;
+}
+.box-login .c-bottom{
+ 	text-align: center;
+ 	margin-top: 20px;
+ }
+.box-login footer{
+	margin-top: 10px;
+	background-color: #efefef;
+	height: 50px;
+	line-height: 50px;
+}
+.box-login footer a{
+	color: #888;
+}
+
+.box-login .f-left{
+	float: left;
+	margin-left: 10px;
+}
+.box-login .f-right{
+	float: right;
+	margin-right: 10px;
+}
+.box-login .erweima{
+	background-color: #f7f7f7;
+	padding: 11px;
+	border: 1px solid #eee;
+	/* opacity: 0.04 */
+
+}
+.box-login .shu{
+	color: #ccc;
+}
+.box-login .under{
+	position: relative;
+
+}
+.box-login .shixiao{
+	position: absolute;
+	top: 10px;
+	left: 0px;
+	text-align: center;
+	z-index: 2;
+	width: 150px;
+	height: 150px;
+	color: #666;
+	display: none;
+}
+.box-login .shixiao .p1{
+	margin: 36px 0 16px;
+}
+.box-login .shixiao .p2{
+	width: 104px;
+	height: 30px;
+	line-height: 30px;
+	background-color: #5aa700;
+	color: #fff;
+	border-radius: 4px;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 16px;
+}
+
+/* content1 */
+.box-login .content1{
+	margin-bottom: 0px;
+}
+.box-login .c1-top{
+	margin: 25px 0 25px 0;
+}
+.box-login .c1-top-con{
+	margin: 30px 0 20px 0;
+}
+.box-login .c1-top:after,
+.box-login .c1-top1:after{
+  	content: "";
+  	display: inline-block;
+  	width: 100%;
+  	height: 1px;
+  	background-color: #ccc;
+}  
+
+.box-login .content1 .container{
+	width: 360px;
+	margin: 0 auto;
+	position: relative;
+}
+.box-login .error span,
+.box-login .error1 span{
+	display: inline-block;
+	height: 10px;
+	line-height: 10px;
+	opacity: 0;
+	margin-left: 120px;
+}
+.box-login .error1 span{
+	margin-left: 0px;
+}
+
+.box-login .user{
+	overflow: hidden;
+}
+.box-login .u-left{
+	float: left;
+}
+.box-login .u-left .text{
+	position: relative;
+	color: #333;
+}
+.box-login .u-left .jiantou{
+	background-image: url("../img/login-tn.png");
+	background-repeat: no-repeat;
+	display: inline-block;
+	width: 15px;
+	height: 8px;
+	background-position: 0px -171px;
+}
+.box-login .u-left .jiantou1{
+	background-image: url("../img/login-tn.png");
+	background-repeat: no-repeat;
+	width: 12px;
+	height: 8px;
+	background-position: -45px -171px;
+	position: relative;
+	left: 0px;
+	display: none;
+}
+
+.box-login .content1 .down-login{
+	width: 100%;
+	height: 122px;
+	border: 1px solid #eee;
+	overflow: auto;
+	border-radius: 2px;
+	display: none;
+	position: absolute;
+	top: 86px;
+	left: 0px;
+	z-index: 2;
+	background-color: #fff;
+}
+
+.box-login .content1 .down-login::-webkit-scrollbar{
+	width: 5px;
+	height: 10px;
+	background-color: #eee;
+}
+.box-login .content1 .down-login li{
+	height: 30px;
+	line-height: 30px;
+	padding-left: 10px;
+}
+.box-login .content1 .down-login li:hover{
+	background-color: #efefef;
+}
+
+.box-login .u-right{
+	float: right;
+	width: 210px;
+	font-size: 16px;
+}
+.box-login .u-right input{
+	outline: none;
+	border: none;
+	color: #999;
+}
+
+.box-login .passw input{
+	outline: none;
+	border: none;
+	font-size: 16px;
+	
+}
+.box-login .yanjing{
+	background-image: url("../img/login-tn.png");
+	background-position: 0px -100px;
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	position: relative;
+	top: 10px;
+	margin-left: 126px;
+	cursor: pointer;
+}
+.box-login .yanjing1{
+	background-image: url("../img/login-tn.png");
+	background-position: -42px -100px;
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	position: absolute;
+	right: 7px;
+	top: 84px;
+	display: none; 
+	cursor: pointer;
+}
+.box-login .forget-mima{
+	margin-left: 280px;
+	margin-bottom: 45px;
+	/* margin-top: -8px; */
+}
+.box-login .forget-mima span{
+	font-size: 12px;
+	color: #333;
+	cursor: pointer;
+	padding-top: 10px;
+}
+.box-login .forget-mima span:hover{
+ 	color: #5aa700;
+}  
+.box-login .mima-xuanze{
+	width: 108px;
+	height: 116px;
+	border: 1px solid #ccc;
+	background-color: #eee;
+	color: #333;
+	position: absolute;
+	right: 15px;
+	top: 56px;
+	display: none;
+}
+.box-login .mima-xuanze li{
+	padding: 6px 0 ;
+	font-size: 12px;
+	text-align: center;
+}
+.box-login .mima-xuanze li:nth-child(1){
+	margin-top: 5px;
+}
+.box-login .mima-a{
+	background-color: #5aa700;
+	padding: 5px 14px;
+	display: inline-block;
+	border-radius: 2px;
+	color: #fff;
+}
+
+.box-login .c-bot input{
+	outline: none;
+	width: 100%;
+	border: none;
+	background-color: #5aa700;
+	line-height: 48px;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 600;
+	border-radius: 2px;
+	opacity: 0.5;
+	cursor: not-allowed;
+}
+.box-login .xieyi{
+	text-align: center;
+	margin-top: 10px;
+}
+.box-login .tit2{
+	text-align: center;
+	margin: 30px 0 3px 0;
+	font-size: 16px;
+	color: #333;
+}
+.box-login .con2{
+	margin-left: 50px;
+	margin-bottom: 65px;
+}
+
+.box-login .con2 i{
+	display: inline-block;
+	width: 57px;
+	height: 57px;
+	background-image: url("../img/login-other.png");
+	margin: 28px 40px 0px 0px;
+}
+.box-login .con2 .i1{
+	background-position: 0 -169px;
+}
+.box-login .con2 .i2{
+	background-position: 0 0;
+}
+.box-login .con2 .i3{
+	background-position: -101px 0;
+}
+.box-login .con2 .i4{
+	background-position: -203px 0;
+}
+.box-login .con2 .i5{
+	background-position: -305px 0;
+}
+.box-login .con2 .i6{
+	background-position: 0 -87px;
+}
+.box-login .con2 .i7{
+	background-position: -101px -87px;
+}
+/*注册*/
+.box-login .tit-register{
+	margin: 48px 0 20px 0;
+	color: #333;
+}
+.box-login .c1-top-re{
+	margin: 22px 0 30px 0;
+}
+.box-login .c-bot-re{
+	margin-top: 90px;
+}
+.box-login .content1 .down-register{
+	top: 146px;
+	left: 15px;
+	width: 93%; 
+}
+
+.register-close{
+	background-image: url("../img/login-tn.png");
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	background-position: -1px -49px;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+}
+.register-close:hover{
+	background-image: url("../img/login-tn.png");
+	display: inline-block;
+	width: 26px;
+	height: 26px;
+	background-position: -40px -43px;
+	position: absolute;
+	right: 16px;
+	top: 16px;
+}
+
+.box-login{
+	position: fixed;
+	z-index: 50;
+	left: 50%; 
+	margin-left: -215px;
+	top: 50%;
+	margin-top: -230px;
+	background-color: #fff;
+	display: none;
+}
+.bg-color{
+	position: fixed;
+	background-color: rgba(0,0,0,0.5);
+	left: 0px;
+	top: 0px;
+	z-index: 49;
+	width: 100%;
+	height: 100%;
+	display: none;
+}
